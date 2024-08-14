@@ -1,0 +1,48 @@
+.loading-page {
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(to right, #E6E6FA, #fff, #E6E6FA);
+gap: 1rem;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #191654;
+z-index: 9999;
+}
+
+#svg {
+/* height: 150px; */
+width: 200px;
+stroke: #EF8B8B;
+stroke-dasharray: 4500;
+stroke-width: 3px;
+/* fill-opacity: 0; */
+animation: draw 8s ease;
+}
+
+@keyframes draw {
+0% {
+    stroke-dashoffset: 4500;
+}
+100% {
+    stroke-dashoffset: 0;
+}
+}
+
+.name-container {
+height: 30px;
+overflow: hidden;
+}
+
+.logo-name {
+color: #ababab;
+font-size: 10px;
+letter-spacing: 12px;
+text-transform: uppercase;
+margin-left: 20px;
+font-weight: bolder;
+}
