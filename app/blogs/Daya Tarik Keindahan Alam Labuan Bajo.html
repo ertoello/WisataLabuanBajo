@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daya Tarik Keindahan Alam Labuan Bajo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="/css/styleotlb.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    /* Global Styles */
+/* Back Button */   
+a{
+    text-decoration: none;
+}
+.mb-3 button.btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.mb-3 button.btn i{
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.mb-3 button.btn:hover {
+    background-color: #EF8B8B;
+    color: #ffffff;
+    border-color: #fff;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb{
+    background-color: transparent;
+}
+
+.breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+/* Article Header */
+header {
+    /* background: #f4f4f4; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'MuseoModerno', cursive;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+header .badge {
+    font-size: 0.9rem;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+header .text-muted {
+    color: #7f8c8d !important;
+    font-size: 0.9rem;
+}
+
+header .d-flex img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .d-flex div p.fw-bold {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+header .d-flex div p.text-muted {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Article Content */
+article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    /* background: #fff; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+article h1, h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+article h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+article h2 {
+    font-size: 1.8em;
+    border-left: 5px solid #1a73e8;
+    padding-left: 10px;
+}
+
+article p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.image-container {
+    position: relative;
+    /* max-width: 100%; */
+    height: 60vh;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    /* background-size: cover; */
+    object-position: 0 -20rem;
+    margin: auto;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.overlay-content h3 {
+    margin: 0 0 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .artkel {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    article h1 {
+        font-size: 2em;
+    }
+
+    article h2 {
+        font-size: 1.5em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    .intro {
+        font-size: 1.1em;
+    }
+
+    .image-container {
+        margin: 10px 0;
+    }
+
+    .overlay-content {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        padding: 15px;
+    }
+
+    article h1 {
+        font-size: 1.8em;
+    }
+
+    article h2 {
+        font-size: 1.3em;
+    }
+
+    article p {
+        font-size: 0.9em;
+    }
+
+    .intro {
+        font-size: 1em;
+    }
+
+    .overlay-content {
+        bottom: 5px;
+        left: 5px;
+        padding: 6px;
+        font-size: 0.9em;
+    }
+}
+
+</style>
+</head>
+<body>
+    <!-- Loading Section Start -->
+    <div class="loading-page">
+        <video id="svg" autoplay loop muted>
+            <source src="/images/loading.mp4" type="video/mp4">
+        </video>
+        <div class="name-container">
+            <p style="font-size: 2rem; color: #ababab;">loading...</p>
+        </div>
+    </div>
+    <!-- Loading Section End -->
+
+<section class="artikel">
+    <!-- Back Button -->
+    <div class="mb-3">
+        <button class="btn btn-light" onclick="goBack()">
+            <i class="fa-solid fa-circle-arrow-left"></i> BACK
+        </button>
+    </div>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="blog.html">Kumpulan Artikel</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Daya Tarik Keindahan Alam Labuan Bajo</li>
+        </ol>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="text-center mb-4">
+        <span class="badge bg-light text-dark" id="kategori">Info Trip</span>
+        <span class="text-muted">04 Mei 2024</span>
+        <h1 class="mt-3">Daya Tarik Keindahan Alam Labuan Bajo</h1>
+        
+        <!-- Author Info -->
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+            <img src="/images/orang/P1.jpg" alt="Author" class="rounded-circle" width="50" height="50">
+            <div>
+                <p class="mb-0 fw-bold">admin</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Image -->
+    <article>
+        <p class="intro">Labuan Bajo, sebuah surga tersembunyi di ujung barat pulau Flores, Indonesia, memikat para wisatawan dengan keindahan alamnya yang menakjubkan. Dikenal sebagai gerbang menuju Taman Nasional Komodo, Labuan Bajo menawarkan pengalaman unik yang mencakup pulau-pulau eksotis, pantai berpasir merah muda, dan kehidupan bawah laut yang luar biasa.</p>
+
+        <div class="image-container">
+            <div class="image-overlay">
+                <img src="/images/pulaupadar.jpg" alt="Pulau Padar" class="main-image">
+                <div class="overlay-content">
+                    <h3>Pulau Padar</h3>
+                </div>
+            </div>
+        </div>
+
+        <h3>Berikut Keindahan Alam Labuan Bajo yang wajib Kamu datangiin</h3>
+        <ol>
+            <li>Komodo National Park:</li>
+            <p>Daya tarik utama Labuan Bajo adalah menjadi pintu gerbang menuju Taman Nasional Komodo. Taman ini adalah rumah bagi komodo, kadal terbesar di dunia. Pengunjung dapat menyaksikan kehidupan liar unik ini, sekaligus menjelajahi keindahan pulau-pulau yang terpencil. Selain Komodo Island, Pulau Rinca dan Pulau Padar juga menjadi tujuan wisata yang menarik di dalam taman nasional ini.</p>
+            <li>Pantai Pasir Merah Muda:</li>
+            <p>Salah satu daya tarik yang paling terkenal di Labuan Bajo adalah Pantai Pasir Merah Muda atau Pink Beach. Warna pasirnya yang mencolok dipengaruhi oleh campuran pecahan karang merah dan pasir putih, menciptakan pemandangan yang memukau. Snorkeling di perairan sekitarnya mengungkapkan keanekaragaman biota laut yang memukau.</p>
+            <li>Pulau Padar:</li>
+            <p>Pulau Padar menawarkan pemandangan spektakuler yang membuatnya menjadi tujuan favorit bagi para pengunjung. Dengan mendaki ke puncak pulau, Anda akan disuguhi panorama indah dari tiga teluk berbeda dengan pasir yang berwarna-warni. Ini adalah tempat ideal untuk mendapatkan foto indah dan mengapresiasi keajaiban alam yang tak terlupakan.</p>
+            <li>Wisata Diving:</li>
+            <p>Labuan Bajo adalah surganya para penyelam. Perairan sekitarnya menawarkan terumbu karang yang indah, air yang jernih, dan kehidupan laut yang beragam. Pergi menyelam di sini memberikan pengalaman luar biasa dengan bertemu langsung dengan ikan-ikan warna-warni dan makhluk laut lainnya.</p>
+            <li>Matahari Terbenam yang Menakjubkan:</li>
+            <p>Labuan Bajo tidak hanya menawarkan keindahan alam, tetapi juga keanekaragaman budaya. Pengunjung dapat berinteraksi dengan penduduk setempat, mengenal tradisi mereka, dan menikmati hidangan kuliner khas Flores, terutama seafood segar yang melimpah.</p>
+        </ol>
+        <p>Dalam keseluruhan, Labuan Bajo adalah destinasi yang sempurna bagi para pencinta alam dan petualang. Dengan keindahan alamnya yang menakjubkan, keberagaman aktivitas yang ditawarkan, dan keramahan penduduknya, Labuan Bajo akan meninggalkan kenangan tak terlupakan bagi setiap pengunjung yang melangkah di tanah ini.</p>
+    </article>
+</section>
+<section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="/app/home.html">Home</a>
+            <a href="/app/opentrip.html">Open Trip Labuan Bajo</a>
+            <a href="/app/sewaspeedboat.html">Sewa Speed Boat</a>
+            <a href="/app/blog.html">Kumpulan Artikel</a>
+        </div>
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="#"><i class="fas fa-phone"></i>0881-0109-30936</a>
+          <a href="#"><i class="fas fa-phone"></i>0812-3920-7325</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i>ertoello28ubsi@gmail.com</a
+          >
+          <a href="#"><i class="fas fa-map"></i>Flores, NTT, Indonesia</a>
+        </div>
+        <div class="box">
+          <h3>Folow Us</h3>
+          <a href="https://ertoello.github.io/"><i class="fab fa-facebook"></i>Facebook</a>
+          <a href="https://ertoello.github.io/"><i class="fab fa-twitter"></i>Twitter</a>
+          <a href="https://ertoello.github.io/"><i class="fab fa-instagram"></i>Instagram</a>
+          <a href="https://ertoello.github.io/"><i class="fab fa-linkedin"></i>Linkedin</a>
+          <a href="https://ertoello.github.io/"><i class="fab fa-github"></i>Github</a>
+        </div>
+      </div>
+      <div class="credit">
+        <p>&copy; 2024 Labuan Bajo Tour By <span>Yohanes Serpiyanto Elo | All rights reserved</span></p>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/scriptotlb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/loadbajo.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

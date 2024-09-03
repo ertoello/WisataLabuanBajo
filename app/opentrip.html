@@ -8,7 +8,107 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/styleotlb.css">
     <link rel="stylesheet" href="../css/loading.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+
+    section.home {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(to right, #E6E6FA, #fff, #E6E6FA);
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .home .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .boxhome{
+            margin-top: 5.5rem;
+            min-width: 100vh;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            padding: 2rem 4%;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .boxhome .content {
+            max-width: 40rem;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 2rem;
+            border-radius: 12px;
+            /* backdrop-filter: blur(8px); */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            margin: 0 auto;
+        }
+
+        .boxhome .content span {
+            font-size: 2.5rem;
+            color: #3498db;
+            line-height: 3rem;
+            text-transform: uppercase;
+        }
+
+        .boxhome .content h3 {
+            font-size: 4rem;
+            color: #e74c3c;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        .boxhome .content p {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.2rem;
+            padding: 1rem 0;
+        }
+        .boxhome .content p a, .boxhome .content p i{
+            color: #3FA3CE;
+        }
+        
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: 0.7;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #3498db;
+        }
+</style>
+   
 </head>
 <body>
 <!-- loading section start -->
@@ -26,10 +126,10 @@
     <a href="#" class="logo"><img src="../images/logolabuanbajo.png" alt=""><h1>Labuan Bajo <span>tour</span></h1></a>
     <nav class="navbar">
         <div id="nav-close" class="fas fa-times"></div>
-        <a href="#home">Home</a>
-        <a href="#about">Open Trip Labuan Bajo</a>
-        <a href="#shop">Sewa Kapal Phinisi Labuan Bajo</a>
-        <a href="#packages">Kumpulan Artikel</a>
+        <a href="home.html">Home</a>
+        <a href="#home">Open Trip Labuan Bajo</a>
+        <a href="sewaspeedboat.html">Sewa Speed Boat</a>
+        <a href="blog.html">Kumpulan Artikel</a>
     </nav>
     <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -46,603 +146,433 @@
 </div> -->
 <!-- home section Start -->
 <section class="home" id="home">
-    <div class="swiper home-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            <div class="box" style="background: url(../images/labuanbajo.jpg)no-repeat;">
-                <div class="content">
-                    <span>Destinasi Top</span>
-                    <h3>Kota Labuan Bajo</h3>
-                    <p>Labuan Bajo dikenal dengan berbagai destinasi wisata alam yang dapat memberikan efek penyembuhan bagi pengunjung. Taman Nasional Komodo, dengan keindahan bawah laut dan spesies uniknya, seperti komodo, adalah salah satu daya tarik utama. Selain itu, Labuan Bajo menawarkan pantai berpasir putih, perairan biru jernih, serta pulau-pulau eksotis yang memikat hati. Keindahan alam ini menciptakan suasana yang menenangkan dan memulihkan, sesuai dengan konsep "healing" yang sedang populer di kalangan wisatawan.</p>
-                    <a href="#" class="btn">get started</a>
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="boxhome" style="background: url('/images/pulaupadar.jpg') no-repeat;">
+                        <div class="content">
+                            <div class="popular-card">
+          <figure class="card-img">
+            <img
+              src="/images/pulaupadar.jpeg"
+              alt="Pulau Padar, Indonesia"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="card-content">
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="card-subtitle"><i class="fa-solid fa-location-crosshairs"></i>
+              <a href="#">Indonesia</a>
+            </p>
+
+            <h3 class="h3 card-title">
+              <a href="#">Pulau Padar</a>
+            </h3>
+
+            <p class="card-text">
+                Pulau Padar adalah pulau terbesar ketiga di kawasan Taman Nasional Komodo, setelah Pulau Komodo dan Pulau Rinca.
+            </p>
+          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="boxhome" style="background: url('/images/pantaipink.jpg') no-repeat;">
+                        <div class="content">
+                           <div class="popular-card">
+          <figure class="card-img">
+            <img
+              src="/images/pantaipink.jpg"
+              alt="Pink Beach, Indonesia"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="card-content">
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="card-subtitle"><i class="fa-solid fa-location-crosshairs"></i>
+              <a href="#">Indonesia</a>
+            </p>
+
+            <h3 class="h3 card-title">
+              <a href="#">Pink Beach</a>
+            </h3>
+
+            <p class="card-text">
+                Pantai berpasir merah muda dengan air jernih dan terumbu karang yang penuh dengan ikan tropis serta arus yang kuat.
+            </p>
+          </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="boxhome" style="background: url('/images/pulaukomodo241.jpeg') no-repeat;">
+                        <div class="content">
+                            <div class="popular-card">
+          <figure class="card-img">
+            <img
+              src="/images/pulaukomodo.jpg"
+              alt="Pulau Komodo, Indonesia"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="card-content">
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="card-subtitle"><i class="fa-solid fa-location-crosshairs"></i>
+              <a href="#">Indonesia</a>
+            </p>
+
+            <h3 class="h3 card-title">
+              <a href="#">Pulau Komodo</a>
+            </h3>
+
+            <p class="card-text">
+                Pulau Komodo adalah sebuah pulau yang terletak di Kepulauan Nusa Tenggara, di sebelah timur Pulau Sumbawa, dipisahkan oleh Selat Sape.
+            </p>
+          </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            <div class="swiper-slide">
-            <div class="box second" style="background: url(../images/pulaukomodo.jpg)no-repeat;">
-                <div class="content">
-                    <span>Destinasi Top</span>
-                    <h3>Taman Nasional Komodo</h3>
-                    <p>Taman Nasional Komodo, yang diakui sebagai Situs Warisan Dunia oleh UNESCO, adalah ikon utama Labuan Bajo. Penelitian oleh Cahyadi (2019) menunjukkan bahwa kunjungan ke Taman Nasional Komodo tidak hanya memberikan pengalaman rekreasi tetapi juga efek penyembuhan psikologis dan emosional bagi pengunjung. Melalui snorkeling dan diving, wisatawan dapat menikmati keindahan terumbu karang dan kehidupan laut yang kaya, yang dapat mengurangi stres dan meningkatkan kesejahteraan.</p>
-                    <a href="#" class="btn">get started</a>
-                </div>
-            </div>
-            </div>
-            <div class="swiper-slide">
-            <div class="box" style="background: url(../images/pantaipink.jpg)no-repeat;">
-                <div class="content">
-                    <span>Destinasi Top</span>
-                    <h3>Keunikan Pantai Pink</h3>
-                    <p>Pantai Pink, salah satu dari hanya beberapa pantai berpasir merah muda di dunia, menawarkan pengalaman visual yang unik dan mempesona. Menurut studi oleh Wijaya (2020), keindahan dan keunikan Pantai Pink dapat memberikan efek terapi visual yang signifikan, membantu mengurangi kecemasan dan meningkatkan suasana hati. Kombinasi warna alam yang menakjubkan dan ketenangan pantai menjadikannya tempat ideal untuk relaksasi dan "healing."</p>
-                    <a href="#" class="btn">get started</a>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</section>
-<!-- home section End -->
-<!-- category section start -->
-    <section class="category">
-        <h1 class="heading">Mengapa Memilih <span>Kami?</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="../images/legalpercaya.png" alt="">
-                <h3>Legal dan Terpercaya</h3>
-                <p>Berdiri dengan badan hukum PT, Anda bisa minta setiap penawaran dilengkapi dengan dokumen legalitas seperti Akta Pendirian, NPWP, SIUP dan TDUP Karena kami mengerti pergi bersama Mitra Terpercaya adalah hal yang Penting. </p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="../images/hargabersahabat.png" alt="">
-                <h3>Harga Bersahabat</h3>
-                <p>Harga Paket Tour yang bersahabat dan bisa disesuaikan dengan kebutuhan dan Budget Anda.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="../images/kebutuhananda.png" alt="">
-                <h3>Apapun Kebutuhan Anda</h3>
-                <p>Mau pergi sendiri ? bersama teman dan keluarga ? Atau acara kantor ? Beragam paket wisata dari spesialisnya tersedia untuk mengakomodir semua kebutuhan Anda. Wisata alam, budaya, kuliner, dinas, outbond, semua ada !</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="../images/booking.png" alt="">
-                <h3>Proses Booking Mudah</h3>
-                <p>Kami Memberikan layanan Ramah dan Mudah untuk Anda yang Ingin melakukan Proses Booking Paket Wisata yang Tawarkan.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
-<!-- category section end -->
+
+
+<!-- home section End -->
+
+<!-- services section start -->
+<!-- services section end -->
+
 <!-- about section start -->
     <section class="about" id="about">
-        <div class="image">
-            <img src="../images/batucermin.jpg" alt="">
+        <div class="images">
+            <img src="../images/src/Group 15.png" alt="">
         </div>
         <div class="content">
-            <h3>Memorable Outdoor Experience</h3>
+            <h3>Tentang Labuan Bajo Labuan Bajo, Sepetak Surga yang Terletak di Indonesia Timur</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipisicing elit. Maxime labore debitis, 
-                ducimus eum repellat optio doloribus iusto 
-                impedit ex illo repudiandae ullam, nostrum dolore 
-                </p><p>voluptatibus laboriosam accusantium soluta quos? 
-                Voluptates consectetur modi libero, sit accusantium 
-                dicta inventore maiores tenetur fuga!
+                Labuan Bajo merupakan sebuah Surga tersembunyi yang ada di Indonesia bagian timur. Desa ini terletak di Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa Tenggara Timur
             </p>
         </div>
     </section>
 <!-- about section end -->
-<!-- shop section start -->
-<section class="shop" id="shop">
-    <h1 class="heading">Featured Products</h1>
-    <div class="swiper product-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="images/pertama/a2.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Survival kits</h3>
-                    <div class="price">$5.00 - $25.00</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
+
+<!-- category section start -->
+    <section class="category">
+        <h1 class="heading">Temukan Petualangan Di Labuan Bajo</h1>
+        <p style="text-align: center; font-size: 1.8rem; margin-top: -1.5rem;">Labuan Bajo menawarkan keindahan Alam yang tak terlupakan bagi para Penjelajah. Petualangan Menyeberang dengan </p>
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/src/Rectangle 16.png" alt="">
+                <h2>Petualangan Menyeberang dengan Kapal</h2>
+                <p>Kamu dapat menjelajahi pulau-pulau terpencil yang indah di Labuan Bajo</p>
             </div>
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="images/pertama/a3.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Survival kits</h3>
-                    <div class="price">$5.00 - $25.00</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
+            <div class="box">
+                <img src="../images/src/Rectangle 17.png" alt="">
+                <h2>Mengarungi Gelombang Laut</h2>
+                <p>Alam bawah laut Labuan Bajo memang sudah Mendunia karena menjadi Objek Wisata yang sangat Menarik</p>
             </div>
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="images/pertama/a4.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Survival kits</h3>
-                    <div class="price">$5.00 - $25.00</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="images/pertama/a5.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Survival kits</h3>
-                    <div class="price">$5.00 - $25.00</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="images/pertama/a6.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Survival kits</h3>
-                    <div class="price">$5.00 - $25.00</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="images/g-9.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Survival kits</h3>
-                    <div class="price">$5.00 - $25.00</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
+            <div class="box">
+                <img src="../images/src/Rectangle 19.png" alt="">
+                <h2>Keindahan Bukit Labuan Bajo</h2>
+                <p>Bukit di Labuan Bajo juga Menarik untuk dijadikan pilihan Wisata di sini</p>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</section>
-<!-- shop section end -->
+    </section>
+<!-- category section end -->
+
 <!-- packages section start -->
 <section class="packages" id="packages">
-    <h1 class="heading">Popular Packages</h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="images/p-1.jpg" alt="">
+        <h1 class="heading">Paket Perjalanan Labuan Bajo</h1>
+        <div class="box-container">
+            <!-- Card 1 -->
+            <div class="box">
+                <div class="image">
+                    <img src="/images/pulaupadarhd1.jpg" alt="" class="gambar">
+                </div>
+                <div class="content">
+                    <h3>One Day Tour Labuan Bajo</h3>
+                    <p>Kunjungan Ke Beberapa Destinasi Populer Dalam Satu Hari</p>
+                    <div class="price">IDR 1.350.000 | Per Personal</div>
+                    <span>
+                        <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info Labuan Bajo Tour." class="btn"><i class="fa-brands fa-whatsapp" target="_blank"></i>Chat Admin</a>
+                        <a href="https://drive.google.com/file/d/1fHOg4J_WXMnzN2FduhjQavLKyCyoCD7Y/view" class="btn" target="_blank"><i class="fa-regular fa-file-pdf"></i>Download PDF</a>
+                    </span>
+                </div>
             </div>
-            <div class="content">
-                <h3>Featured Tour Package</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque consectetur enim.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">Eksplore Now</a>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/pantaimanjarite.png" alt="" class="gambar">
+                </div>
+                <div class="content">
+                    <h3>Open Trip 2 Hari 1 Malam Labuan Bajo</h3>
+                    <p>Penjelajahan dua hari ke beberapa destinasi utama.</p>
+                    <div class="price">IDR 2.250.000 | Per Personal</div>
+                    <span>
+                        <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info Labuan Bajo Tour." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i>Chat Admin</a>
+                        <a href="https://drive.google.com/file/d/14MQnDM7PmPMjtUIHg30bR1PQvpKi4oPR/view" class="btn" target="_blank"><i class="fa-regular fa-file-pdf" target="_blank"></i>Download PDF</a>
+                    </span>
+                </div>
             </div>
-        </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/pantaipink.jpg" alt="" class="gambar">
+                </div>
+                <div class="content">
+                    <h3>Open Trip 3 Hari 2 Malam by Phinisi Superior Labuan Bajo</h3>
+                    <p>Pengalaman eksklusif di kapal Phinisi deluxe selama tiga hari dua malam.</p>
+                    <div class="price">IDR 3.500.000 | Per Personal</div>
+                    <span>
+                        <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info Labuan Bajo Tour." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i>Chat Admin</a>
+                        <a href="https://drive.google.com/file/d/18Ii03wnmt44zJC0Ecny33hqVwuGbzJ0O/view" class="btn" target="_blank"><i class="fa-regular fa-file-pdf"></i>Download PDF</a>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/pulaukalong.jpg" alt="" class="gambar">
+                </div>
+                <div class="content">
+                    <h3>Open Trip 3 Hari 2 Malam by Phinisi Deluxe Labuan Bajo</h3>
+                    <p>Pengalaman eksklusif di kapal Phinisi deluxe selama tiga hari dua malam.</p>
+                    <div class="price">IDR 3.350.000 | Per Personal</div>
+                    <span>
+                        <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info Labuan Bajo Tour." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i>Chat Admin</a>
+                        <a href="https://drive.google.com/file/d/18Ii03wnmt44zJC0Ecny33hqVwuGbzJ0O/view" class="btn" target="_blank"><i class="fa-regular fa-file-pdf"></i>Download PDF</a>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/takkamakasar.jpg" alt="" class="gambar">
+                </div>
+                <div class="content">
+                    <h3>Open Trip 3 Hari 2 Malam by Phinisi Luxury Labuan Bajo</h3>
+                    <p>memberikan pengalaman paling mewah dengan fasilitas terbaik di kapal Phinisi Luxury.</p>
+                    <div class="price">IDR 4.500.000 | Per Personal</div>
+                    <span>
+                        <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info Labuan Bajo Tour." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i>Chat Admin</a>
+                        <a href="https://drive.google.com/file/d/18Ii03wnmt44zJC0Ecny33hqVwuGbzJ0O/view" class="btn" target="_blank"><i class="fa-regular fa-file-pdf"></i>Download PDF</a>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/waerebo.jpeg" alt="" class="gambar">
+                </div>
+                <div class="content">
+                    <h3>Open Trip 2 Hari 1 Malam Desa Wae rebo</h3>
+                    <p>mengunjungi Desa Wae Rebo, menawarkan pengalaman budaya dan alam yang unik.</p>
+                    <div class="price">IDR 1.750.000 | Per Personal</div>
+                    <span>
+                        <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info Labuan Bajo Tour." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i>Chat Admin</a>
+                        <a href="https://drive.google.com/file/d/1Z5fbTBbdMNAigf6mI9BfSAa7p4TyJZXP/view" class="btn" target="_blank"><i class="fa-regular fa-file-pdf"></i>Download PDF</a>
+                    </span>
+                </div>
+            </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="images/p-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Featured Tour Package</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque consectetur enim.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">Eksplore Now</a>
-            </div>
-        </div>
+            <!-- Tambahkan card lainnya di sini seperti contoh di atas -->
 
-        <div class="box">
-            <div class="image">
-                <img src="images/p-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Featured Tour Package</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque consectetur enim.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">Eksplore Now</a>
-            </div>
         </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/p-4.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Featured Tour Package</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque consectetur enim.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">Eksplore Now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/p-5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Featured Tour Package</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque consectetur enim.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">Eksplore Now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/p-6.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Featured Tour Package</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque consectetur enim.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">Eksplore Now</a>
-            </div>
-        </div>
-    </div>
-</section>
+        <!-- Modal overlay -->
+        <div id="modal-overlay" class="modal-overlay">
+    <button id="close-btn" class="close-btn">&times;</button>
+    <button id="prev-btn" class="prev-btn">&#10094;</button> <!-- Tombol sebelumnya -->
+    <img id="modal-image" src="" alt="Gambar Besar">
+    <button id="next-btn" class="next-btn">&#10095;</button> <!-- Tombol berikutnya -->
+</div>
+    </section>
 <!-- packages section end -->
-<!-- services section start -->
-<section class="services">
-    <h1 class="heading">What We Offer</h1>
-    <div class="box-container">
-        <div class="box">
-            <img src="images/1.jpg" alt="">
-            <h3>Complete Guide</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum sed repudiandae!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
 
-        <div class="box">
-            <img src="images/2.jpg" alt="">
-            <h3>Custom Packages</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum sed repudiandae!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-        <div class="box">
-            <img src="images/3.jpg" alt="">
-            <h3>Family Trips</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum sed repudiandae!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-        <div class="box">
-            <img src="images/4.jpg" alt="">
-            <h3>Train Guides</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum sed repudiandae!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-        <div class="box">
-            <img src="images/5.jpg" alt="">
-            <h3>Adventure Trail</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum sed repudiandae!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-        <div class="box">
-            <img src="images/6.jpg" alt="">
-            <h3>Various Adventures</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum sed repudiandae!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-    </div>
-</section>
-<!-- services section end -->
-<!-- reviews section start -->
-<section class="reviews" id="reviews">
-    <h1 class="heading">Client's Reviews</h1>
-    <div class="swiper review-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. Dolorem, 
-                    repellendus error. Laudantium possimus 
-                    et cupiditate doloribus quaerat incidunt 
-                    enim, totam magnam atque officia. Omnis, 
-                    neque doloremque consectetur atque 
-                    exercitationem animi.</p>
-                    <div class="user">
-                        <img src="images/labuan/afif-ramdhasuma-5MlXRvlvRlU-unsplash 1.png" alt="">
-                        <div class="info">
-                            <h3>John Deo</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. Dolorem, 
-                    repellendus error. Laudantium possimus 
-                    et cupiditate doloribus quaerat incidunt 
-                    enim, totam magnam atque officia. Omnis, 
-                    neque doloremque consectetur atque 
-                    exercitationem animi.</p>
-                    <div class="user">
-                        <img src="images/labuan/Bajo 2.jpg" alt="">
-                        <div class="info">
-                            <h3>John Deo</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. Dolorem, 
-                    repellendus error. Laudantium possimus 
-                    et cupiditate doloribus quaerat incidunt 
-                    enim, totam magnam atque officia. Omnis, 
-                    neque doloremque consectetur atque 
-                    exercitationem animi.</p>
-                    <div class="user">
-                        <img src="images/labuan/Bajo 3.jpg" alt="">
-                        <div class="info">
-                            <h3>John Deo</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. Dolorem, 
-                    repellendus error. Laudantium possimus 
-                    et cupiditate doloribus quaerat incidunt 
-                    enim, totam magnam atque officia. Omnis, 
-                    neque doloremque consectetur atque 
-                    exercitationem animi.</p>
-                    <div class="user">
-                        <img src="images/labuan/bg-home.jpg" alt="">
-                        <div class="info">
-                            <h3>John Deo</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. Dolorem, 
-                    repellendus error. Laudantium possimus 
-                    et cupiditate doloribus quaerat incidunt 
-                    enim, totam magnam atque officia. Omnis, 
-                    neque doloremque consectetur atque 
-                    exercitationem animi.</p>
-                    <div class="user">
-                        <img src="images/labuan/calo.jpg" alt="">
-                        <div class="info">
-                            <h3>John Deo</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. Dolorem, 
-                    repellendus error. Laudantium possimus 
-                    et cupiditate doloribus quaerat incidunt 
-                    enim, totam magnam atque officia. Omnis, 
-                    neque doloremque consectetur atque 
-                    exercitationem animi.</p>
-                    <div class="user">
-                        <img src="images/labuan/celvin-purnama-TaHnmSRFoT4-unsplash 1.png" alt="">
-                        <div class="info">
-                            <h3>John Deo</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- reviews section end -->
 <!-- Blogs Section Start -->
 <section class="blogs" id="blogs">
-    <h1 class="heading">Our Daily Posts</h1>
+    <h1 class="heading">Para Tim</h1>
+    <p>Kami siap memandu perjalanan anda dengan aman, nyaman, dan lancar. Kami adalah tim yang berdedikasi untuk menghadirkan pengalaman wisata terbaik di Labuan Bajo kepada Anda. Dengan keahlian dan passion dalam industri pariwisata, kami bertujuan untuk menjadikan perjalanan Anda ke Labuan Bajo sebagai momen yang tak terlupakan.</p>
     <div class="swiper blogs-slider">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" style="">
             <div class="swiper-slide slide">
-                <img src="images/labuan/eksotis.png" alt="">
+                <img src="/images/orang/P1.jpg" alt="">
                 <div class="icons">
-                    <a href="#"><i class="fas fa-calendar"></i>21st May, 2021</a>
-                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    
+                    <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info layanan Labuan Bajo Tour." target="_blank"><i class="fa-brands fa-whatsapp"></i>Hubungi Saya</a>
                 </div>
-                <h3>Blog Title Goes Here</h3>
-                <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing 
-                    elit. Ad recusandae a aliquam impedit 
-                    minima nam, molestias facere consequuntur 
-                    placeat nihil.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Dedi Agus Wijaya</h3>
+                <p>Tour Guide (Pemandu Wisata)</p>
             </div>
             <div class="swiper-slide slide">
-                <img src="images/labuan/foto1.jpg" alt="">
+                <img src="/images/orang/P2.jpg" alt="">
                 <div class="icons">
-                    <a href="#"><i class="fas fa-calendar"></i>21st May, 2021</a>
-                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    
+                    <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info layanan Labuan Bajo Tour." target="_blank"><i class="fa-brands fa-whatsapp"></i>Hubungi Saya</a>
                 </div>
-                <h3>Blog Title Goes Here</h3>
-                <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing 
-                    elit. Ad recusandae a aliquam impedit 
-                    minima nam, molestias facere consequuntur 
-                    placeat nihil.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Fajar Bima Santoso</h3>
+                <p>Driver/Chauffeur (Pengemudi)</p>
             </div>
             <div class="swiper-slide slide">
-                <img src="images/labuan/foto10.jpg" alt="">
+                <img src="/images/orang/W4.jpg" alt="">
                 <div class="icons">
-                    <a href="#"><i class="fas fa-calendar"></i>21st May, 2021</a>
-                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    
+                    <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info layanan Labuan Bajo Tour." target="_blank"><i class="fa-brands fa-whatsapp"></i>Hubungi Saya</a>
                 </div>
-                <h3>Blog Title Goes Here</h3>
-                <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing 
-                    elit. Ad recusandae a aliquam impedit 
-                    minima nam, molestias facere consequuntur 
-                    placeat nihil.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Rani Eka Putri</h3>
+                <p>Destination Manager</p>
             </div>
             <div class="swiper-slide slide">
-                <img src="images/labuan/foto14.jpg" alt="">
+                <img src="/images/orang/P5.jpg" alt="">
                 <div class="icons">
-                    <a href="#"><i class="fas fa-calendar"></i>21st May, 2021</a>
-                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    
+                    <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info layanan Labuan Bajo Tour." target="_blank"><i class="fa-brands fa-whatsapp"></i>Hubungi Saya</a>
                 </div>
-                <h3>Blog Title Goes Here</h3>
-                <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing 
-                    elit. Ad recusandae a aliquam impedit 
-                    minima nam, molestias facere consequuntur 
-                    placeat nihil.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Vino Ali Ramdan</h3>
+                <p>Operations Manager</p>
             </div>
             <div class="swiper-slide slide">
-                <img src="images/labuan/foto15.jpg" alt="">
+                <img src="/images/orang/W3.jpg" alt="">
                 <div class="icons">
-                    <a href="#"><i class="fas fa-calendar"></i>21st May, 2021</a>
-                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    
+                    <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info layanan Labuan Bajo Tour." target="_blank"><i class="fa-brands fa-whatsapp"></i>Hubungi Saya</a>
                 </div>
-                <h3>Blog Title Goes Here</h3>
-                <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing 
-                    elit. Ad recusandae a aliquam impedit 
-                    minima nam, molestias facere consequuntur 
-                    placeat nihil.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Siti Indah Lestari</h3>
+                <p>Local Partner (Mitra Lokal)</p>
             </div>
             <div class="swiper-slide slide">
-                <img src="images/labuan/foto17.jpg" alt="">
+                <img src="/images/orang/W2.jpg" alt="">
                 <div class="icons">
-                    <a href="#"><i class="fas fa-calendar"></i>21st May, 2021</a>
-                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    
+                    <a href="https://wa.me/62881010930936?text=Hallo Kak Erto. Mau Info layanan Labuan Bajo Tour." target="_blank"><i class="fa-brands fa-whatsapp"></i>Hubungi Saya</a>
                 </div>
-                <h3>Blog Title Goes Here</h3>
-                <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing 
-                    elit. Ad recusandae a aliquam impedit 
-                    minima nam, molestias facere consequuntur 
-                    placeat nihil.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Nina Sari Dewi</h3>
+                <p>Safety Officer</p>
             </div>
         </div>
     </div>
 </section>
 <!-- Blogs Section ens -->
-<!-- newletter section Start -->
-<section class="newletter" id="newletter">
-    <div class="content">
-        <h1 class="heading">Subscribe Now</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit. Error quo dolorum aliquid 
-            laboriosam exercitationem inventore, dolores 
-            iste non totam sequi earum blanditiis architecto.</p>
-        <form action="#">
-            <input type="email" name="" placeholder="enter your email" id="" class="email">
-            <input type="submit" value="subscribe" class="btn">
-        </form>
-    </div>
-</section>
+<section class="tips">
+                <div class="text-center">
+                    <h1 class="heading">Tips Liburan ke Labuan Bajo</h1>
+                    <p style="font-size: 1.8rem; ">Wisatawan yang berwisata ke Labuan Bajo perlu melakukan
+                       persiapan yang lebih matang, baik dari segi fisik maupun finansial</p>
+                </div>
 
-<section class="clients">
-    <div class="swiper clients-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide"><img src="images/labuan/foto2.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto3.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto4.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto5.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto6.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto7.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto8.jpg" alt=""></div>
-            <div class="swiper-slide slide"><img src="images/labuan/foto9.jpg" alt=""></div>
-        </div>
-    </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-6 mx-0">
+                        <div
+                            class="d-flex card-tips-item gap-2 justify-content-around align-items-start bg-white shadow-sm px-2 px-lg-0 rounded-3 py-2">
+                            <div class="col-4 col-md-4 rounded-1"
+                                style="background-image: url('/images/src/time.jpg'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="title-2">Ketahui waktu yang tepat untuk berkunjung</h5>
+                                <p class="text-2 card-text">Waktu terbaik untuk berkunjung ke Labuan Bajo yaitu mulai Maret
+                                    hingga September karena cuacanya yang bagus</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex card-tips-item gap-2 justify-content-around align-items-start bg-white shadow-sm px-2 px-lg-0 rounded-3 mt-3 py-2">
+                            <div class="col-4 col-md-4 rounded-1"
+                                style="background-image: url('/images/src/calo.jpg'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="title-2">Hindari Calo</h5>
+                                <p class="text-2 card-text">Turis tanpa agen perjalanan dapat berisiko bertemu calo di
+                                    pelabuhan yang menawarkan tiket kapal dengan harga lebih tinggi</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex card-tips-item gap-2 justify-content-around align-items-start bg-white shadow-sm px-2 px-lg-0 rounded-3 mt-3 py-2">
+                            <div class="col-4 col-md-4 rounded-1"
+                                style="background-image: url('/images/src/money.jpg'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="title-2">Siapkan biaya liburan</h5>
+                                <p class="text-2">Anggaran minimum yang perlu disiapkan oleh wisatawan untuk
+                                    liburan selama tiga hari dua malam ke Labuan Bajo sekitar Rp 6 juta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mx-0 mt-2 mt-lg-0">
+                        <div
+                            class="d-flex card-tips-item gap-2 justify-content-around align-items-start bg-white shadow-sm px-2 px-lg-0 rounded-3 py-2">
+                            <div class="col-4 col-md-4 rounded-1"
+                                style="background-image: url('/images/src/Itinerary.jpg'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8 d-flex flex-column justify-content-around">
+                                <h5 class="title-2">Susun Itinerary Selama di Labuan Bajo</h5>
+                                <p class="text-2" style="margin-top: 5px;">Kamu bisa memulainya dengan menuliskan tempat-tempat yang sudah
+                                    terkenal, seperti Pink Beach, Pulau Padar, hingga Pulau Kelor</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex card-tips-item gap-2 justify-content-around align-items-start bg-white shadow-sm px-2 px-lg-0 rounded-3 mt-3 py-2">
+                            <div class="col-4 col-md-4 rounded-1"
+                                style="background-image: url('/images/src/update.jpg'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="title-2">Update Informasi Terbaru</h5>
+                                <p class="text-2">Kamu juga perlu memperhatikan peraturan terkait konservasi agar
+                                    ekosistem di Labuan Bajo ini tetap terjaga</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex card-tips-item gap-2 justify-content-around align-items-start bg-white shadow-sm px-2 px-lg-0 rounded-3 mt-3 py-2">
+                            <div class="col-4 col-md-4 rounded-1"
+                                style="background-image: url('/images/src/obat.jpg'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="title-2">Bawa Obat-obatan Penting</h5>
+                                <p class="text-2">Membawa obat-obatan sendiri akan membantu membuat liburanmu aman
+                                    dan nyaman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 </section>
-<!-- newletter section End-->
+   
 
 <!-- footer section start -->
 <section class="footer">
     <div class="box-container">
         <div class="box">
             <h3>quick links</h3>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#shop">Shop</a>
-            <a href="#packages">Packages</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#blogs">Blogs</a>
-        </div>
-        <div class="box">
-            <h3>Extra Links</h3>
-            <a href="#">My Account</a>
-            <a href="#">My Order</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Ask Questions</a>
-            <a href="#">Privacy Policy</a>
+            <a href="home.html">Home</a>
+            <a href="#home">Open Trip Labuan Bajo</a>
+            <a href="sewaspeedboat.html">Sewa Speed Boat</a>
+            <a href="blog.html">Kumpulan Artikel</a>
         </div>
         <div class="box">
             <h3>Contact Info</h3>
@@ -653,11 +583,11 @@
         </div>
         <div class="box">
             <h3>Folow Us</h3>
-            <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-            <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
-            <a href="#"><i class="fab fa-github"></i>Github</a>
+            <a href="https://ertoello.github.io/"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="https://ertoello.github.io/"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="https://ertoello.github.io/"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://ertoello.github.io/"><i class="fab fa-linkedin"></i>Linkedin</a>
+            <a href="https://ertoello.github.io/"><i class="fab fa-github"></i>Github</a>
         </div>
     </div>
     <div class="credit">Copyright Labuan Bajo Tour By <span>Yohanes Serpiyanto Elo | all right reserved</span></div>
@@ -670,5 +600,33 @@
 integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../js/loadbajo.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+        var swiper = new Swiper('.home-slider', {
+            effect: 'coverflow', // Mengatur efek coverflow
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50, // Rotasi slide
+                stretch: 0, // Jarak antara slide
+                depth: 100, // Kedalaman 3D
+                modifier: 1, // Modifikasi efek
+                slideShadows: true, // Bayangan slide
+            },
+            autoplay: {
+                delay: 5000, // Delay dalam milidetik (5 detik)
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+</script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
 .loading-page {
 position: absolute;
 top: 0;
@@ -36,6 +39,7 @@ animation: draw 8s ease;
 .name-container {
 height: 30px;
 overflow: hidden;
+font-family: "MuseoModerno", sans-serif;
 }
 
 .logo-name {
