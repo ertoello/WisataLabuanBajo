@@ -141,6 +141,18 @@ font-weight: bolder;
 	}
 }
 
+.header-text .about .images{
+		flex: 1 1 30rem;
+	}
+	.header-text .about .images img{
+		/* flex: 1 1 30rem; */
+		width: 70%;
+	}
+	.header-text .about .content{
+		flex: 1 1 42rem;
+		text-align: justify;
+	}
+
 @media (max-width: 1200px) {
     .text-content h1 {
         font-size: 4.5rem;
@@ -151,6 +163,17 @@ font-weight: bolder;
         /* text-align: center; */
         margin-left: 6rem;
     }
+	.header-text .about .images{
+		flex: 1 1 10rem;
+	}
+	.header-text .about .images img{
+		/* flex: 1 1 30rem; */
+		width: 100%;
+	}
+	.header-text .about .content{
+		flex: 1 1 30rem;
+		text-align: justify;
+	}
 }
 
 @media (max-width: 998px) {
@@ -165,6 +188,7 @@ font-weight: bolder;
     .text-content p {
         width: 85%;
     }
+	
 }
 
 @media (max-width: 800px) {
@@ -200,13 +224,7 @@ font-weight: bolder;
     .text-content p {
         width: 80%;
     }
-	.about .images{
-		flex: 1 1 30rem;
-	}
-	.about .content{
-		flex: 1 1 30rem;
-		text-align: justify;
-	}
+	
 }
 
 @media (max-width: 768px) {
@@ -222,7 +240,19 @@ font-weight: bolder;
     .text-content p {
         width: 90%;
     }
+	.header-text .about .images{
+		flex: 1 1 42rem;
+	}
+	.header-text .about .images img{
+		/* flex: 1 1 30rem; */
+		width: 40%;
+	}
+	.header-text .about .content{
+		flex: 1 1 42rem;
+		text-align: justify;
+	}
 }
+
 
 @media (max-width: 500px) {
 	.navbar a {

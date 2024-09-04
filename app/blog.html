@@ -21,12 +21,21 @@
     <link rel="stylesheet" href="../css/loading.css" />
     <style>
 section.about{
-  height: 100vh;
-  width: 100%;
+  /* width: 100%; */
+  /* height: 90rem; */
   background: linear-gradient(to right, #E6E6FA, #fff, #E6E6FA);
+  align-items: center;
+  padding: 10rem 5rem 18rem;
 }
+
 section.about .images{
-  height: 70%;
+  flex: 1 1 42rem;
+  text-align: center;
+}
+
+section.about .images img{
+  width: 80vh;
+  height: 80vh;
 }
 
 section.about a{
@@ -37,9 +46,10 @@ section.about a:hover{
   color: #fff;
 }
 
-.about .images img {
-    width: 80%;
-  }
+.about .content{
+  flex: 1 1 42rem;
+}
+
 .about .content h3{
   font-family: "MuseoModerno", sans-serif;  
 }
@@ -53,6 +63,7 @@ section.about a:hover{
     /* margin: 10px; */
     padding: 0.8rem;
     border-radius: 12px;
+    /* align-items: center; */
 }
 
 .gallery .box:hover {
@@ -175,21 +186,6 @@ section.about a:hover{
   gap: 2rem;
 }
 
-@media (max-width: 800px) {
-  .about .images {
-    flex: 1 1 36rem;
-    text-align: center;
-    margin-top: 9rem;
-}
-}
-@media (max-width: 749px) {
-  .about .images{
-    text-align: center;
-}
-  .about .images img {
-    width: 60%;
-}
-}
     </style>
     <!-- google font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
