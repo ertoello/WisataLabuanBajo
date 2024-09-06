@@ -226,5 +226,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function goBack() {
-  window.location.href = "/app/blog.html"; // Mengarahkan ke halaman home.html
+  window.location.href = "../blog.html"; // Mengarahkan ke halaman home.html
 }
